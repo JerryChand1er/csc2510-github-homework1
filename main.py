@@ -4,7 +4,7 @@ import random
 
 # Main.py 
 # Originally created by Brandon Vandergriff
-# Ruined by: 
+# Ruined by: Jerry Chandler
 
 def funcVandergriff():
 
