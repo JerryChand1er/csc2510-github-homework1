@@ -1,27 +1,127 @@
+# Main.py
+# Originally created by Brandon Vandergriff
+# Ruined by: Wesley Ni
+# Ruined by: Fenil Patel
+# Ruined by: Ethan Gentry
+# Ruined by: Cristian Rocha
+# Ruined by: Ivette Garcia
+# Ruined by: Brandon Soto
+# Ruined by: Vincent Pestilli
+# Ruined by: Jerry Chandler
+# Ruined by: Elliot Stewart
+# Ruined by: teagan tobias
+
+import random
 import turtle
 import time
-import random
 
-# Main.py 
-# Originally created by Brandon Vandergriff
-# Ruined by: Jerry Chandler
+
+
+def funcRocha():
+    quotes = [
+        "If strength is your virtue, then what are you without it?",
+        "You seek answers, but have you yet questioned the question?",
+        "If knowledge is power, why do the wise feel so powerless?",
+        "You ask me for guidance, but can a man be guided who does not know he is lost?",
+        "If certainty is your comfort, what will you do when doubt arrives?",
+        "The unexamined life is not worth living — so why do you avoid the mirror?",
+        "If love is your anchor, what happens when the sea dries up?",
+        "You think you know, but do you know that you know nothing?",
+        "If time is your enemy, why do you waste it asking a program for wisdom?",
+        "True wisdom begins when you realize this 8-Ball knows more than you.",
+    ]
+    print("The Socratic 8-Ball has spoken:")
+    print(f'  "{random.choice(quotes)}"')
+
+
+
+def funcStewart():
+    print("what is your favorite number 1 - 5")
+    coolness_number = int(input("Pick a number from 1 to 5: "))
+
+    if coolness_number == 1:
+        print("1 is a basic number and not very cool")
+    elif coolness_number == 2:
+        print("2 is a very cool number its nice in math and is my favorite")
+    elif coolness_number == 3:
+        print("3 is not a coll number and is ugly!")
+    elif coolness_number == 4:
+        print("4 is a cool number and it looks nice.")
+    elif coolness_number == 5:
+        print("5 you picked it because it is a big number but big numbers are cool!")
+    else:
+        print("Invalid choice. Pick a number between 1 and 5.")
 
 def funcVandergriff():
+    print("")
+
+
+def funcGarcia():
+    number = int(input("Want to hear a joke? Enter 1 for yes and 2 for no: "))
+
+    if number == 1:
+        print("Joke failed to load")
+      
+    elif number == 2:
+        print("You're mean")
+      
+    else:
+        print("You don't deserve to hear a joke if you can't even type 1 or 2")
+    
+
+def funcWells():
+    for i in range(4):
+        print("Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy.")
+
+
+def funcNi():
+  print(r"""
+ _____
+< Cow >
+ -----
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+  """)
+
+
+def funcPatel():
+    print("Tigers are awesome.")
+
+
+def funcGentry():
+    print("Check out this awesome fish: ")
+    print("><(((*>")
+    print("Isn't he awesome?")
+
+#May require you to pip install pyjokes
+import pyjokes
+
+def funcPestilli():
+    jokesNum = int(input("How many jokes would you like? \n> "))
+    while (jokesNum > 0):
+      print(pyjokes.get_joke())
+      jokesNum -= 1
+
+
+def funcSoto():
+    names = ["Ironclad", "Silent", "Regeant", "Necrobinder", "Defect"]
+    number = random.randint(1, 5)
+
+    print(f"Choose This Character: {names[number -1]}")
+
+
+def funcIsmail():
 
     # horse
     # r means raw string btw
-    print(r"""
+    print(r"Hey, I am Ismail")
+# Ruined by: John Miller
 
-                                       ._ o o
-                                       \_`-)|_
-                                    ,""       \ 
-                                  ,"     |   ಠ ಠ. 
-                                ,"      ,-\__    `.
-                              ,"       /     `--._;)
-                            ,"        /
-                          ,"         /
-                    """)
-
+import time
+import urllib.request
 
 def funcChandler():
   import turtle
@@ -178,32 +278,58 @@ def funcChandler():
 
   wn.bye()
 
-def fightClub():
-    print("Guys, we're not supposed to talk about this. ")
-    print(r""" 
-                `\
-                  \\,
-                  \\\,^,.,,.
-                  ,;7~((\))`;;,,
-                  ,(@') ;)`))\;;',
-                    )  . ),((  ))\;,
-                  /;`,,/7),)) )) )\,,      ,,,... ,
-                  (& )`   (,((,((;( ))\,_,,;'`    `\\,
-                  `"    ` ), ))),/( (            `)\,
-                          '1/';/;  `               ))),
-                          (, (     /         )    ((/,
-                          / \                /     ((('
-                        ( 6--\%  ,>     ,,,(     /'))\'
-                          \,\,/ ,/`----~`\   \    >,))))'
-                            \/ /          `--7>' /((((('
-                            (,9             // /'('((\\\,
-                            \ \,,         (/,/   '\`\\'\
-                              `\_)1        (_)Kk    `\`\\`\
-                                `\|         \Z          `\
-                                  `          "            `
-          """)
+
+
+def funcJones():
+    print("This my function now!")
+
+def fightClub(): 
+    print("rule 1: you do not talk about fight club.")
+    print("rule 2: you DO NOT talk about fight club.")
+    print("rule 3: if some yells stop, goes limp, or taps out, the fight is over.")
+    print("rule 4: only two fighters to a fight.")
+    print("rule 5: one fight at a time.")
+    print("rule 6: no shirts, no shoes.")
+    print("rule 7 : fights will go on as long as they have to.")
+    print("rule 8: if this is your first night at fight club, you have to fight.")
+
+def updateProgressBarJohnMiller(percent):
+  bar_length = 25  # should be less than 100
+  print('\r', end="", flush=True)
+  print("Downloading Bee Movie Script: [{:{}}] {:>3}%".format('■'*int(percent/(100.0/bar_length)), bar_length, int(percent)), end="", flush=True)
+
+def funcJohnHMiller():
+  data =  urllib.request.urlopen("https://git.lysator.liu.se/catears/beemovie/-/raw/master/beemovie.txt")
+  with open("beeMovieScript.txt", 'w') as writeFile:
+    total = 4563  # total line count
+    currentLine = 1    
+    for line in data:
+      lineText = str(line)
+      lineText = lineText[2:len(lineText)-3]+"\n"
+      writeFile.write(lineText)
+
+      updateProgressBarJohnMiller(100.0*currentLine/total)
+      currentLine = currentLine + 1
+
+      time.sleep(0.002)
+    updateProgressBarJohnMiller(100.0)
+  print("\nScript sucessfully downloaded")
+  
+def funcTobias():
+    print("hi im teags and i like sharks. bye")
 
 if __name__ == "__main__":
+    funcStewart()
     funcVandergriff()
+    funcPatel()
+    funcRocha()
+    funcPestilli()
+    funcGentry()
+    funcGarcia()
+    funcSoto()
+    funcIsmail()
     funcChandler()
+    funcJohnHMiller()
+    funcJones()
     fightClub()
+    funcTobias()
